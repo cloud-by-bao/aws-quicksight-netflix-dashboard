@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <img src="https://cdn.prod.website-files.com/677c400686e724409a5a7409/6790ad949cf622dc8dcd9fe4_nextwork-logo-leather.svg" alt="NextWork" width="300" />
 
 # Visualize data with QuickSight
@@ -104,3 +105,121 @@ I initally couldn't see my updated data in QuickSight, so I had to visit the dat
 ---
 
 ---
+=======
+<p align="center">
+  <img src="https://cdn.prod.website-files.com/677c400686e724409a5a7409/6790ad949cf622dc8dcd9fe4_nextwork-logo-leather.svg" alt="NextWork" width="300" />
+</p>
+
+# 📊 Visualizing Netflix Data with AWS QuickSight
+
+**🔗 Project Link:** [View on NextWork](http://learn.nextwork.org/projects/aws-analytics-quicksight)  
+**👤 Author:** Bao Luong  
+**📧 Email:** baodevops21@gmail.com
+
+---
+
+## 📝 Project Overview
+
+In this project, I demonstrate how to analyze a large Netflix dataset using **Amazon QuickSight**. This end-to-end walkthrough covers using **Amazon S3 to store data**, configuring a `manifest.json`, and generating powerful **interactive dashboards** with QuickSight.
+
+---
+
+## 🧰 Tools & Concepts
+
+- **AWS Services:** S3, QuickSight
+- **Key Concepts:** `manifest.json`, data filters, data visualizations (charts, graphs), dataset refresh, S3 permissions
+
+---
+
+## ⏱ Time Spent
+
+- Approx. 1–1.5 hours
+- Biggest challenge: Understanding how `manifest.json` connects to S3
+- Most rewarding: Seeing Netflix raw CSV data turned into interactive charts
+
+---
+
+## 🪣 Upload Project Files to S3
+
+- Uploaded:
+  - `netflix_files.csv` – raw dataset
+  - `manifest.json` – specifies file format, structure, and location
+- Edited the `S3Uri` inside the manifest to ensure QuickSight could locate the dataset
+
+---
+
+## 🧾 Creating a QuickSight Account
+
+- Free 30-day trial — make sure to **uncheck "Pixel-Perfect Reports"** to avoid charges.
+- Took 4–5 minutes including permissions setup.
+
+---
+
+## 🔗 Connecting QuickSight to S3
+
+- From the **Datasets** page in QuickSight, chose **S3** as the source.
+- Used the `manifest.json` to configure:
+  - Data format (`.csv`)
+  - Delimiters (`commas`)
+  - File structure
+
+---
+
+## 📈 First Visualization
+
+- Used `release_year` to create a chart showing how many shows/movies were released by year.
+- Changed the chart type to **donut** for better readability.
+
+---
+
+## 🎛 Using Filters
+
+- Applied a filter to show data from **2015 and beyond**.
+- Limited results to 3 categories: *Action & Adventure*, *TV Comedies*, and *Thrillers*.
+
+---
+
+## 📊 Setting Up a Dashboard
+
+- Customized chart titles for clarity
+- Published dashboard and exported it as a PDF using **Generate PDF**
+
+---
+
+## 🔁 Refreshing Source Data
+
+- Replaced original CSV with one that included country data
+- Updated both the S3 file and `manifest.json`
+- Performed a full refresh in QuickSight to reflect updated data
+
+---
+
+## 🗂 Project Structure
+
+```
+aws-quicksight-netflix-dashboard/
+├── manifest.json
+├── netflix_files.csv
+├── README.md
+└── screenshots/ (optional if self-hosting images)
+```
+
+---
+
+## ✅ Final Thoughts
+
+> “This project helped me understand how AWS data tools work in real time. Visualizing insights from a raw dataset gave me confidence in using cloud-native tools like QuickSight.”
+
+---
+
+## 📌 Related Links
+
+- [Amazon QuickSight](https://aws.amazon.com/quicksight/)
+- [AWS S3 Docs](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html)
+
+---
+
+## ⭐️ Like This Project?
+
+If you found this helpful, give this repo a ⭐ and connect with me on [LinkedIn](https://www.linkedin.com/in/bluong21/)!
+>>>>>>> e3e95c6 (Initial commit: QuickSight Netflix dashboard project)
